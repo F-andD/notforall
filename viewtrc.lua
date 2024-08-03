@@ -73,10 +73,10 @@ end
 
 -- Function to handle chat commands
 local function onChat(message)
-    if message == "/t_off" then
+    if message == "toff" then
         toggle = false
         chat:Chat(player.Character.Head, "Tracer is now OFF", Enum.ChatColor.Red)
-    elseif message == "/t_on" then
+    elseif message == "ton" then
         toggle = true
         chat:Chat(player.Character.Head, "Tracer is now ON", Enum.ChatColor.Green)
     end
